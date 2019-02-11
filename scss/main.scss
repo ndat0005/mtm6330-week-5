@@ -1,0 +1,21 @@
+@import 'variable';
+body{
+  font-family: $fonts-text;
+  background-color: $asphalt;
+  color: $clouds;
+  font-size: $text-font-size;
+}
+h1,h2,h3,h4,h5,h5,h6{
+  font-family: $font-headings;
+}
+.shape{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: $text-font-size;
+  background-color: lighten($asphalt, 30%);
+  border: 1px solid lighten($asphalt, 26%);
+}
+.shape1{
+  @extend .shape;
+}
